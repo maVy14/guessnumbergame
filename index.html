@@ -11,6 +11,16 @@
 				box-sizing: border-box;
 			}
 
+			@keyframes animation{
+				from{
+					transform: rotateX(270deg);
+					background: #2d7a58;
+				}
+				to{
+					transform: rotateX(360deg);
+				}
+			}
+
 			body{
 				height: 100vh;
 
@@ -29,6 +39,10 @@
 				padding: 10px;
 				box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.3);
 				border-radius: 10px;
+
+				animation-name: animation;
+				animation-duration: 3s;
+				animation-timing-function: linear;
 			}
 
 			label{
@@ -46,8 +60,8 @@
 
 			.btn{
 				width: 100%;
-				background: darkblue;
-				color: gray;
+				background: #6c3cab;
+				color: black;
 				padding: 3px;
 				margin-top: 10px;
 			}
