@@ -6,71 +6,12 @@
 
 		<link href="./img/logo/qmark.jpg" rel="icon" type="img/jpg">
 
-		<style type="text/css">
-			*{
-				box-sizing: border-box;
-			}
-
-			@keyframes animation{
-				from{
-					transform: rotateX(270deg);
-					background: #2d7a58;
-				}
-				to{
-					transform: rotateX(360deg);
-				}
-			}
-
-			body{
-				height: 100vh;
-
-				display: flex;
-				justify-content: center;
-				align-items: center;
-
-				margin: 0;
-				overflow: hidden;
-				background: darksalmon;
-			}
-
-			.box{
-				width: 250px;
-				background: #f4f4f4;
-				padding: 10px;
-				box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.3);
-				border-radius: 10px;
-
-				animation-name: animation;
-				animation-duration: 3s;
-				animation-timing-function: linear;
-			}
-
-			label{
-				display: block;
-				margin: 7px 0;
-			}
-
-			.form-control{
-				width: 100%;
-				display: block;
-				padding: 3px;
-
-				/*appearance: none;*/
-			}
-
-			.btn{
-				width: 100%;
-				background: #6c3cab;
-				color: black;
-				padding: 3px;
-				margin-top: 10px;
-			}
-		</style>
+		<link href="./css/guessno.css" rel="stylesheet" type="text/css">
 	</head>
 	<body>
 		<div id="box" class="box">
 			<div id="innerbox" class="innerbox">
-				<h3>Guess Number from 0 to 9</h3>
+				<h3>Guess Number from 0 to 10</h3>
 
 				<label for="guessno">Choose Number</label>
 				<!-- <input type="number" name="guessno" id="guessno" class="form-control" autofocus autocomplete="off"> -->
@@ -86,6 +27,7 @@
 					<option value="7">7</option>
 					<option value="8">8</option>
 					<option value="9">9</option>
+					<option value="10">10</option>
 				</select>
 
 				<button type="button" class="btn" onclick="getdata()">Submit</button>
@@ -95,23 +37,6 @@
 
 
 
-		<script type="text/javascript">
-			function getdata(){
-				let no = Math.random();
-				// console.log(no);
-				let database = Math.round(no * 10);
-				// console.log(database);
-				let result = document.getElementById("innerbox");
-
-				let usr_input = document.getElementById("guessno").value;
-				// console.log(usr_input);
-
-				if (usr_input == database){
-					result.innerHTML= `Your answer is true.`;
-				}else{
-					result.innerHTML= `Your answer is false.`;
-				}
-			}
-		</script>
+		<script src="./js/guessno.js" type="text/javascript"></script>
 	</body>
 </html>
