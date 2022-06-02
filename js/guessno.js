@@ -10,9 +10,23 @@ function getdata(){
 	// console.log(usr_input);
 
 	if (usr_input == database){
-		result.innerHTML= `Your answer is true.`;
+		result.innerHTML= `
+			<div class="replace">
+				<span class="ans">Your answer is true.</span>
+				<button type="button" class="restart-btn">
+					<a href="https://mavy14.netlify.app/" class="restart">Play Again</a>
+				</button>
+			</div>
+		`;
 	}else{
-		result.innerHTML= `Your answer is false.`;
+		result.innerHTML= `
+			<div class="replace">
+				<span class="ans">Your answer is false.</span>
+				<button type="button" class="restart-btn">
+					<a href="https://mavy14.netlify.app/" class="restart">Play Again</a>
+				</button>
+			</div>
+		`;
 	}
 
 	// result.classList.replace("innerbox","ans");

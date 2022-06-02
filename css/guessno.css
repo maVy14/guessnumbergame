@@ -58,3 +58,25 @@ label{
 	padding: 3px;
 	margin-top: 10px;
 }
+
+/*.replace{
+	background-color: #c6c8cc;
+}*/
+
+.ans{
+	display: block;
+	color: #ed092f;
+}
+
+.restart-btn{
+	margin-left: 65%;
+	margin-top: 10px;
+	border-radius: 5px;
+	background: #6c3cab;
+}
+
+.restart{
+	text-decoration: none;
+	/*margin-left: 65%;*/
+	color: black;
+}
