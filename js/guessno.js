@@ -23,7 +23,7 @@ function getdata(){
 			<div class="replace">
 				<span class="ans">Your answer is false.</span>
 				<button type="button" class="restart-btn">
-					<a href="https://mavy14.netlify.app/" class="restart">Play Again</a>
+					<a href="https://axl-guessnumber.netlify.app" class="restart">Play Again</a>
 				</button>
 			</div>
 		`;
